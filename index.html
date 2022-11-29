@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name='viewport' content="width=device-width, initiap-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>color code generator</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="app-name">
+       color RGB code generator
+      </h1>
+      <div class="container output-box">
+      </div>
+      
+      <input name="rbg-text-output-container" id="rgb-text-output-container" type="text" placeholder="rgb(0,0,0)" onchange="color_text_value_process()" />
+      
+      <div class="container rgb-input-container">
+        <div class="rgb-input-area">
+          <label>red : </label>
+         0 <input type="range" name="rgb-red" id="rgb-red" value="0" min='0' max='255' onchange="slider_value_process()" /> 255
+        </div>
+  
+        <div class="rgb-input-area">
+        <label>green : </label>
+        0 <input type="range" name="rgb-green" id="rgb-green" value="0" min='0' max='255' onchange="slider_value_process()"/> 255
+        </div>
+        
+        <div class="rgb-input-area">
+        <label>blue : </label>
+        0 <input type="range" name="rgb-blue" id="rgb-blue" value="0" min='0' max='255' onchange="slider_value_process()"/> 255
+        </div>
+        
+        <button id="copy_btn" onclick="copy_rgb_code()">copy!</button>
+        
+      </div>
+    <script src="script.js" type="text/javascript">
+    </script>
+  </body>
+</html>
